@@ -1,0 +1,18 @@
+annuitas<-function(num, k,i,t,m=TRUE){
+  v=(1/(1+i))
+  switch(num,
+         satu= {
+           an_annuitas_awal = k*(1-v^n)/(i*v)
+           sn_annuitas_awal = k*((1+i)^n-1)/(i*v)
+           print(an_annuitas_awal)
+           print(sn_annuitas_awal)
+         },
+         dua= {
+           an_annuitas_akhir=k*(1-v^n)/i
+           sn_annuitas_akhir= k*((1+i)^n-1)/(i)
+           print(an_annuitas_akhir)
+           print(sn_annuitas_akhir)
+         }
+         
+  )
+}
