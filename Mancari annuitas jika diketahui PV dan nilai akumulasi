@@ -1,0 +1,24 @@
+angsuran<-function(num,nilai,i,t,m=TRUE){
+  j=i/m
+  n=t*m
+  v=1/(1+j)
+  switch(num,
+         satu= {
+           k_an_annakhir = nilai/((1-v^n)/(j))
+           print(k_an_annakhir)
+         },
+         dua ={
+           k_sn_annakhir = nilai/ ((((1+j)^n)-1)/j)
+           print(k_sn_annakhir)
+         },
+         tiga= {
+           k_an_annawal = nilai/((1-v^n)/(j*v))
+           print(k_an_annawal)
+         },
+         empat= {
+           k_sn_annawal= nilai/((((1+j)^n)-1)/(j*v))
+            print(k_sn_annawal)
+         }
+         
+  )
+}
